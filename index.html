@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="resources/css/styles.css" rel="stylesheet">
     <link href="resources/images/favicon.ico" rel="icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap" rel="stylesheet">
     <title>Basic Calculator</title>
 </head>
 <body>
     <calculator>
         <section id=calc-background>
-            <section id=screen></section>
+            <section id=screen>
+                <div id="previous-operand"></div>
+                <div id="current-operand"></div>
+            </section>
             <section id=keypad>
                 <button class="misc" id="ac">AC</button>
                 <button class="misc" id="pos-neg">&plus;/&minus;</button>
-                <button class="material-symbols-outlined" id="misc">backspace</button>
+                <button class="misc" id="erase">&#x232b;</button>
                 <button class="operator" id="divide">&divide;</button>
                 <button class="number" id="seven">7</button>
                 <button class="number" id="eight">8</button>
@@ -35,5 +40,6 @@
             </section>
         </section>
     </calculator>
+    <script src="resources/js/script.js"></script>
 </body>
 </html>
