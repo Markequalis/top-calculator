@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calc-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    height: 298px;
+    width: 210px;
+    background-color: purple;
+}
+
+#screen {
+    border: 2px solid #000;
+    width: 176px;
+    height: 25px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+#keypad {
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 220px;
+    width: 176px;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: violet;
+    background: linear-gradient(to bottom right, #8a2be2, #4b0082);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.2s;
+}
+
+button:hover {
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3), inset -4px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.operator {
+    background-color: orange;
+    background: linear-gradient(to bottom, #ffa500, #ff8c00);
+}
+
+.misc, #misc {
+    background-color: gray;
+    background: linear-gradient(to bottom, #d3d3d3, #a9a9a9);
+}
+
+.number {
+    background-color: pink;
+    background: linear-gradient(to bottom, #ffb6c1, #ff69b4);
+}
+
+#zero {
+    display: flex;
+    width: 86px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: left;
+    padding-left: 15px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.2s;
+}
+
+#zero:hover {
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3), inset -4px -4px 10px rgba(255, 255, 255, 0.3);
+}
