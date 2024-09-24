@@ -30,6 +30,8 @@ body {
     background-color: lightgreen;
     border-radius: 10px;
     box-shadow: inset 4px 4px 8px rgba(0, 128, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.2); /* Neumorphic inset shadow with green tint */
+    display: flex;
+    flex-direction: row;
 }
 
 #keypad {
