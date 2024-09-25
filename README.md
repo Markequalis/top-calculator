@@ -4,7 +4,7 @@ This calculator was a very difficult challenge for me. I spent many, many hours 
 
 # Calculator Functionality
 
-The calculator functions perfectly for the most part, but it has issues with long strings of numbers. Think "111111111111 - 1"; it turns into 111111111112 for some reason and none of the operators work well with it. 
+The calculator functions almost perfectly for the most part, but it has issues with long strings of numbers. Think "111111111111 - 1"; it turns into 111111111112 for some reason and none of the operators work well with it. 
 
 Also less of an issue but still one: the +/i symbol is an operator. If you're trying to do 7 * -2, because of how the calculator works you will need to type 7 * 2 first and then it'll evaluate the equation as though it was -2. It also seems to think that -7 - (-2) is still a subtraction, so... yeah. 
 
