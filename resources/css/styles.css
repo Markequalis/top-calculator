@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto';
+    font-family: 'sans-serif';
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,20 +18,25 @@ body {
     height: 298px;
     width: 210px;
     background-color: whitesmoke; /* Purple background color */
-    box-shadow: 4px 4px 8px rgba(54, 0, 102, 0.5), -4px -4px 8px rgba(122, 0, 204, 0.5); /* Neumorphic shadow with purple tints */
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
 #screen {
-    border: none;
     width: 176px;
     height: 25px;
     padding: 5px;
     margin-bottom: 5px;
     background-color: lightgreen;
     border-radius: 10px;
-    box-shadow: inset 4px 4px 8px rgba(0, 128, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.2); /* Neumorphic inset shadow with green tint */
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.2);
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    padding-right: 10px;
+    gap: 4px;
 }
 
 #keypad {
@@ -47,7 +52,7 @@ body {
     padding: 5px;
     border-radius: 20px;
     background-color: #e0e0e0;
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.2); /* Neumorphic inset shadow */
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2), inset 0 0 8px rgba(255, 255, 255, 0.2); /* Neumorphic inset shadow */
 }
 
 button {
@@ -57,27 +62,24 @@ button {
     font-size: 15px;
     border-radius: 50%;
     background-color: #e0e0e0;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2); /* Neumorphic shadow */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 8px rgba(255, 255, 255, 0.2); /* Neumorphic shadow */
     transition: box-shadow 0.2s;
     border: 1px solid #000;
 }
 
 button:active {
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.2); /* Neumorphic pressed effect */
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2), inset 0 0 8px rgba(255, 255, 255, 0.2); /* Neumorphic pressed effect */
 }
 
-.operator {
+.operator, .equals {
     background-color: orange;
     background: linear-gradient(to bottom, #ffa500, #ff8c00);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 8px rgba(255, 255, 255, 0.2);
 }
 
-.misc {
+#ac, #erase, #pos-neg {
     background-color: gray;
     background: linear-gradient(to bottom, #d3d3d3, #a9a9a9);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
-    -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
-    -moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
 }
 
 #erase {
@@ -90,7 +92,7 @@ button:active {
 .number {
     background-color: pink;
     background: linear-gradient(to bottom, #ffb6c1, #ff69b4);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2); /* Neumorphic shadow */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 8px rgba(255, 255, 255, 0.2); /* Neumorphic shadow */
 }
 
 #zero {
@@ -101,10 +103,27 @@ button:active {
     text-align: left;
     padding-left: 15px;
     background-color: #e0e0e0;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2); /* Neumorphic shadow */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 8px rgba(255, 255, 255, 0.2); /* Neumorphic shadow */
     transition: box-shadow 0.2s;
 }
 
 #zero:active {
-    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.2); /* Neumorphic pressed effect */
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2), inset 0 0 8px rgba(255, 255, 255, 0.2); /* Neumorphic pressed effect */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    gap: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 255, 255, 0.2);
 }

@@ -12,34 +12,35 @@
 </head>
 <body>
     <calculator>
-        <section id=calc-background>
-            <section id=screen>
-                <div id="previous-operand"></div>
-                <div id="current-operand"></div>
-            </section>
-            <section id=keypad>
-                <button class="misc" id="ac">AC</button>
-                <button class="misc" id="pos-neg">&plus;/&minus;</button>
-                <button class="misc" id="erase">&#x232b;</button>
-                <button class="operator" id="divide">&divide;</button>
-                <button class="number" id="seven">7</button>
-                <button class="number" id="eight">8</button>
-                <button class="number" id="nine">9</button>
-                <button class="operator" id="multiply">&times;</button>
-                <button class="number" id="four">4</button>
-                <button class="number" id="five">5</button>
-                <button class="number" id="six">6</button>
-                <button class="operator" id="minus">&minus;</button>
-                <button class="number" id="one">1</button>
-                <button class="number" id="two">2</button>
-                <button class="number" id="three">3</button>
-                <button class="operator" id="plus">&plus;</button>
+        <div id="calc-background">
+            <div id="screen">
+                <div class="previous-operand"></div>
+                <div class="display-operator"></div>
+                <div class="current-operand"></div>
+            </div>
+            <div id="keypad">
+                <button class="clear" id="ac">AC</button>
+                <button class="operator" id="pos-neg">+/-</button>
+                <button class="erase" id="erase">⌫</button>
+                <button class="operator" id="divide">÷</button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operator" id="multiply">×</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator" id="subtract">−</button>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operator" id="add">+</button>
                 <button class="number" id="zero">0</button>
                 <button class="number" id="decimal">.</button>
-                <button class="operator" id="equals">&equals;</button>
-            </section>
-        </section>
-    </calculator>
-    <script src="resources/js/script.js"></script>
+                <button class="equals" id="equals">=</button>
+            </div>
+        </div>
+        <footer><img src="resources/images/favicon.ico">RynerCorp 2024</footer>
+        <script type="module" src="resources/js/script.js"></script>
 </body>
 </html>
