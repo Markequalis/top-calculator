@@ -83,13 +83,13 @@ const handleNumberInput = (previousOperand, currentOperand, input) => {
 
 // Format number for display, handling large numbers with exponential notation
 const formatNumberForDisplay = (number) => {
-    console.log("formatNumberForDisplay input:", number);
+    console.log('formatNumberForDisplay input:', number);
     if (number === '' || number === '-') return number;
     let formatted = parseFloat(number).toString();
     if (formatted.length > MAX_DIGITS) {
         formatted = parseFloat(number).toExponential(4);
     }
-    console.log("formatNumberForDisplay output:", formatted);
+    console.log('formatNumberForDisplay output:', formatted);
     return formatted;
 };
 
